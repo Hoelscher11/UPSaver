@@ -12,7 +12,7 @@ $(function () {
         var datalist = "username=" + username;
         $.ajax({
             type: "post",
-            url: "http://172.17.87.170:8080/UPSaver/GetAllAccount",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/GetAllAccount",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -53,7 +53,7 @@ $(function () {
         var datalist ="username=" + username + "&accname=" +accname;
         $.ajax({
             type: "post",
-            url: "http://172.17.87.170:8080/UPSaver/GetAccountData",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/GetAccountData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -102,7 +102,7 @@ $(function () {
         var datalist = "username=" + username + " &accname=" + accname + "&accusername=" + accusername + "&accpassword=" + accpassword;
         $.ajax({
             type: "post",
-            url: "http://192.168.137.1:8080/UPSaver/AddAccount",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/AddAccount",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -133,7 +133,7 @@ $(function () {
         var datalist = "username=" + username + "&accname=" +accname;
         $.ajax({
             type: "post",
-            url: "http://172.17.87.170:8080/UPSaver/GetAccountData",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/GetAccountData",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -172,7 +172,7 @@ $(function () {
         var datalist = "username=" + username + "&accname=" + accname + "&accusername=" + accusername + "&accpassword=" +accpassword;
         $.ajax({
             type: "post",
-            url: "http://172.17.87.170:8080/UPSaver/UpdateAccount",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/UpdateAccount",
             data: datalist,
             cache: false,
             success: function (mydata) {
@@ -202,7 +202,7 @@ $(function () {
         if(answer){
             $.ajax({
                 type: "post",
-                url: "http://172.17.87.170:8080/UPSaver/DeleteAccount",
+                url: "http://172.17.87.170:8080/Group6_UPSaver/DeleteAccount",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {

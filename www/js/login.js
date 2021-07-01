@@ -12,7 +12,7 @@ $(function() {
             var datalist = "username=" + username + "&password=" + password;
             $.ajax({
                 type: "post",
-                url: "http://172.17.87.170:8080/UPSaver/Login",
+                url: "http://172.17.87.170:8080/Group6_UPSaver/Login",
                 data: datalist,
                 cache: false,
                 success: function (mydata) {

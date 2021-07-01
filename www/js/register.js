@@ -14,7 +14,7 @@ $(function () {
         var datalist = "name=" + name + "&username=" + username + "&email=" + email + "&password=" + password;
         $.ajax({
             type: "post",
-            url: "http://172.17.87.170:8080/UPSaver/Register",
+            url: "http://172.17.87.170:8080/Group6_UPSaver/Register",
             data: datalist,
             cache: false,
             success: function (mydata) {
